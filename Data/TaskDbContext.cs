@@ -10,5 +10,5 @@ public class TaskDbContext : DbContext
     {
     }
 
-    public DbSet<Task> Tasks { get; set; }
+    public DbSet<Models.Task> Tasks { get; set; }
 }

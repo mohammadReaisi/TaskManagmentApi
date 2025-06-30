@@ -7,8 +7,8 @@ public class TaskProfile : Profile
 {
     public TaskProfile()
     {
-        CreateMap<Task, TaskDto>();
-        CreateMap<CreateTaskDto, Task>();
-        CreateMap<UpdateTaskDto, Task>();
+        CreateMap<Models.Task, TaskDto>();
+        CreateMap<CreateTaskDto, Models.Task>();
+        CreateMap<UpdateTaskDto, Models.Task>();
     }
 }

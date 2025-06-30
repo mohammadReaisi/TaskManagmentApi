@@ -30,7 +30,7 @@ public class TaskService : ITaskService
 
     public async Task<TaskDto> CreateTaskAsync(CreateTaskDto createTaskDto)
     {
-        var task = _mapper.Map<Task>(createTaskDto);
+        var task = _mapper.Map<Models.Task>(createTaskDto);
         _context.Tasks.Add(task);
         await _context.SaveChangesAsync();
         return _mapper.Map<TaskDto>(task);
